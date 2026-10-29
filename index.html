@@ -1,3 +1,6 @@
+
+index.html
+100 %
 <!doctype html>
 <html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ООО «СамараСтройПуть»</title>
@@ -2200,6 +2203,13 @@ html:not([data-bpm-occ-visible="true"]) #bpmsoftoccchat{visibility:hidden!import
   #bpmsoftoccchat-container .bpmsoftoccchat-messenger{left:16px!important;right:16px!important;bottom:calc(96px + env(safe-area-inset-bottom))!important;width:auto!important;max-width:none!important;height:min(620px,calc(100dvh - 124px - env(safe-area-inset-bottom)))!important}
   #bpmsoftoccchat-container .bpmsoftoccchat-smile-container{max-height:min(210px,calc(100dvh - 234px - env(safe-area-inset-bottom)))!important}
 }
+</style><style data-bpm-occ-overrides="true">/* Opaque base and composer: the client page must not show through the chat. */
+#bpmsoftoccchat-container .bpmsoftoccchat-messenger,
+#bpmsoftoccchat-container .bpmsoftoccchat-conversation-footer,
+#bpmsoftoccchat-container .bpmsoftoccchat-composer,
+#bpmsoftoccchat-container .bpmsoftoccchat-footer {
+  background-color: #fff !important;
+}
 </style></head>
 <body>
 
@@ -2390,13 +2400,13 @@ html:not([data-bpm-occ-visible="true"]) #bpmsoftoccchat{visibility:hidden!import
       <p class="lead">Оставьте контактные данные — мы свяжемся с вами, чтобы обсудить заявку.</p>
       <form id="request-form" novalidate>
         <div class="grid">
-          <div class="field wide"><label class="label" for="company">Название компании<span class="star" aria-hidden="true">*</span></label><input type="text" id="company" name="Company" placeholder="Название организации" autocomplete="organization" maxlength="250" required aria-describedby="company-error"><span class="error" id="company-error"></span></div>
-          <div class="field wide"><label class="label" for="fullName">ФИО<span class="star" aria-hidden="true">*</span></label><input type="text" id="fullName" name="Name" placeholder="Фамилия Имя Отчество" autocomplete="name" maxlength="250" required aria-describedby="fullName-error"><span class="error" id="fullName-error"></span></div>
-          <div class="field wide"><label class="label" for="jobTitle">Должность</label><input type="text" id="jobTitle" name="FullJobTitle" placeholder="Например, инженер" autocomplete="organization-title" maxlength="250" aria-describedby="jobTitle-error"><span class="error" id="jobTitle-error"></span></div>
-          <div class="field"><label class="label" for="phone">Телефон<span class="star" aria-hidden="true">*</span></label><input type="text" id="phone" name="MobilePhone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" maxlength="40" required aria-describedby="phone-error"><span class="error" id="phone-error"></span></div>
-          <div class="field"><label class="label" for="email">Email<span class="star" aria-hidden="true">*</span></label><input type="text" id="email" name="Email" placeholder="name@company.ru" autocomplete="email" inputmode="email" spellcheck="false" autocapitalize="none" maxlength="250" required aria-describedby="email-error"><span class="error" id="email-error"></span></div>
-          <div class="field"><label class="label" for="city">Город</label><input type="text" id="city" name="City" placeholder="Например, Самара" autocomplete="address-level2" maxlength="250" aria-describedby="city-error"><span class="error" id="city-error"></span></div>
-          <div class="field"><label class="label" for="zip">Почтовый индекс</label><input type="text" id="zip" name="Zip" placeholder="Например, 443001" autocomplete="postal-code" inputmode="numeric" maxlength="20" aria-describedby="zip-error"><span class="error" id="zip-error"></span></div>
+          <div class="field wide"><label class="label" for="company">Название компании<span class="star" aria-hidden="true">*</span></label><input type="text" id="company" name="Company" autocomplete="organization" maxlength="250" required aria-describedby="company-error"><span class="error" id="company-error"></span></div>
+          <div class="field wide"><label class="label" for="fullName">ФИО<span class="star" aria-hidden="true">*</span></label><input type="text" id="fullName" name="Name" autocomplete="name" maxlength="250" required aria-describedby="fullName-error"><span class="error" id="fullName-error"></span></div>
+          <div class="field wide"><label class="label" for="jobTitle">Должность</label><input type="text" id="jobTitle" name="FullJobTitle" autocomplete="organization-title" maxlength="250" aria-describedby="jobTitle-error"><span class="error" id="jobTitle-error"></span></div>
+          <div class="field"><label class="label" for="phone">Телефон<span class="star" aria-hidden="true">*</span></label><input type="text" id="phone" name="MobilePhone" autocomplete="tel" inputmode="tel" maxlength="40" required aria-describedby="phone-error"><span class="error" id="phone-error"></span></div>
+          <div class="field"><label class="label" for="email">Email<span class="star" aria-hidden="true">*</span></label><input type="text" id="email" name="Email" autocomplete="email" inputmode="email" spellcheck="false" autocapitalize="none" maxlength="250" required aria-describedby="email-error"><span class="error" id="email-error"></span></div>
+          <div class="field"><label class="label" for="city">Город</label><input type="text" id="city" name="City" autocomplete="address-level2" maxlength="250" aria-describedby="city-error"><span class="error" id="city-error"></span></div>
+          <div class="field"><label class="label" for="zip">Почтовый индекс</label><input type="text" id="zip" name="Zip" autocomplete="postal-code" inputmode="numeric" maxlength="20" aria-describedby="zip-error"><span class="error" id="zip-error"></span></div>
         </div>
         <label class="consent"><input type="checkbox" id="consent" required aria-describedby="consent-error"><span>Даю согласие на <button class="text-button" type="button">обработку персональных данных</button> в соответствии с <button class="text-button" type="button">политикой конфиденциальности</button>.</span></label><span class="error" id="consent-error"></span>
         
@@ -2572,3 +2582,4 @@ window.BPMSOFT_PAGE_CONFIG = {
   initOcc();
 })();
 </script></body></html>
+index.html. На экране.
