@@ -2447,7 +2447,7 @@ html:not([data-bpm-occ-visible="true"]) #bpmsoftoccchat{visibility:hidden!import
   @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 <section class="panel" id="contact-panel" role="dialog" aria-modal="false" aria-labelledby="panel-title" hidden>
-  <header class="panel-head"><div><span class="eyebrow">Обратная связь</span><h2 id="panel-title">Заполнить заявку</h2></div><button type="button" class="close" id="close-panel" aria-label="Закрыть окно"><svg viewbox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button></header>
+  <header class="panel-head"><div><span class="eyebrow"></span><h2 id="panel-title">Заполнить заявку</h2></div><button type="button" class="close" id="close-panel" aria-label="Закрыть окно"><svg viewbox="0 0 20 20" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button></header>
   <div class="panel-body" id="panel-body">
     <div id="request-pane">
       <p class="lead">Оставьте контактные данные — мы свяжемся с вами, чтобы обсудить заявку.</p>
@@ -2469,7 +2469,7 @@ html:not([data-bpm-occ-visible="true"]) #bpmsoftoccchat{visibility:hidden!import
       </form>
     </div>
     <div id="chat-pane" hidden><div class="chat-body"><div class="chat-symbol"><svg viewbox="0 0 28 28" fill="none" aria-hidden="true"><path d="M23 13a9 9 0 0 1-9 9H7l-4 3v-8a9 9 0 0 1 0-8 10 10 0 0 1 20 4Z" stroke="currentColor" stroke-width="1.5"></path></svg></div><h3 id="chat-loading-title">Подключаем чат</h3><p id="chat-loading-description">Пожалуйста, подождите.</p><div class="chat-preview-note" id="chat-note" role="status" aria-live="polite">Загружаем окно переписки…</div></div></div></div></section>
-<nav class="dock" aria-label="Обратная связь">
+<nav class="dock" aria-label="">
   <button class="primary" id="request-tab" type="button" aria-expanded="false" aria-controls="contact-panel"><svg viewbox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"></path><path d="M14 3v6h6M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>Заполнить заявку</span></button>
   <span class="divider" aria-hidden="true"></span>
   <button id="chat-tab" type="button" aria-expanded="false" aria-controls="contact-panel"><svg viewbox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11a8 8 0 0 1-8 8H6l-3 3V11a8.5 8.5 0 0 1 17 0Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"></path><path d="M7 10h9M7 14h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"></path></svg><span>Чат</span></button>
